@@ -4,6 +4,8 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Node](https://img.shields.io/badge/node-%E2%89%A520-339933?logo=node.js&logoColor=white)
 
+**Status:** stable · extracted from a private project and reduced to the mechanism · **Licence:** MIT
+
 **A key that can be claimed exactly once.**
 
 Chunked AES-256-GCM sealing that runs entirely on the sender's machine, plus an
