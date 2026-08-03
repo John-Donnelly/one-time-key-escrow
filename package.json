@@ -1,0 +1,24 @@
+{
+  "name": "one-time-key-escrow",
+  "version": "1.0.0",
+  "description": "A key that can be claimed exactly once: chunked AES-256-GCM sealing plus a single-threaded escrow that destroys the key in the same write that releases it.",
+  "keywords": ["encryption", "aes-gcm", "webcrypto", "cloudflare-workers", "durable-objects", "one-time-secret", "zero-knowledge"],
+  "license": "MIT",
+  "author": "John Donnelly",
+  "type": "module",
+  "main": "src/escrow.js",
+  "exports": {
+    ".": "./src/escrow.js",
+    "./crypto": "./src/crypto.js",
+    "./worker": "./src/worker.js"
+  },
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.9"
+  }
+}

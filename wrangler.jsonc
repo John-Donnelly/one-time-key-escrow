@@ -1,0 +1,16 @@
+{
+  // Replace `name` and the Durable Object migration tag with your own.
+  "name": "one-time-key-escrow",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-06-01",
+
+  "durable_objects": {
+    "bindings": [{ "name": "ESCROW", "class_name": "EscrowDO" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["EscrowDO"] }],
+
+  // MASTER_KEY is a secret, never a var:  wrangler secret put MASTER_KEY
+  "vars": {},
+
+  "observability": { "enabled": true }
+}
